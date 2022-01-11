@@ -2,7 +2,35 @@ pool:
   vmImage: 'ubuntu-18.04'
 trigger:
   - master
-steps:
+
+stages:
+- stage: Build
+  displayName: 'Build Stage'
+  jobs:
+  - job: Build
+    displayName: 'Build job'
+    pool:
+      vmImage: windows-latest
+    steps:
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: |
+         Write-Host "Hello world!"
+
+  - job: Build2
+    displayName: 'Build job 2'
+    pool:
+      vmImage: windows-latest
+    steps:
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: |
+         Write-Host "Hello world 2!"
+- stage: demo
+  displayName: demo stage
+  steps:
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
     inputs:
