@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/xinkai-yang-org/5fbdefb6-7e8e-4fec-bce7-687096d103a6/b60a36e9-2396-447e-95cf-b930064887db/_apis/work/boardbadge/3637e288-e8a8-4fde-8b37-5d82a2889478)](https://dev.azure.com/xinkai-yang-org/5fbdefb6-7e8e-4fec-bce7-687096d103a6/_boards/board/t/b60a36e9-2396-447e-95cf-b930064887db/Microsoft.RequirementCategory)
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
 
